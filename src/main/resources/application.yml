@@ -1,0 +1,29 @@
+server:
+  port: 9010
+ssl:
+  enabled: true
+  key-alias: 1
+  key-store: msk***.jks
+  key-store-password: 123456
+
+http:
+  client:
+    maxPoolSize: 300
+    ssl:
+      trust-store: msk***.jks
+      trust-store-password: 123456
+
+application.viber-bot:
+  auth-token: "4bccc5dfba27df1d-fefacfa5034e1feb-419e465a81ae****"
+  webhook-url: "https://******.******.ru:8443/imr/v1/alice"
+  name: "nikitaperevozchikov"
+  avatar: "http://example.com/avatar.jpg"
+
+#https:
+#  proxySet: true
+#  proxyHost: "vlg-proxy.******.ru"
+#  proxyPort: 3128
+#  proxyUser: ""
+#  proxyPassword: ""
+
+logging.level.com.viber: DEBUG
